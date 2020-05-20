@@ -1,0 +1,26 @@
+{
+  "name": "movie-lib",
+  "version": "1.0.0",
+  "description": "lib to handle movie entity",
+  "scripts": {
+    "tsc": "npx tsc -w",
+    "tsc:unit": "npx tsc",
+    "test": "npx jest --watchAll",
+    "test:unit": "npx jest",
+    "build": "tsc"
+  },
+  "author": "@valerionarcisi",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "devDependencies": {
+    "@types/jest": "^25.2.2",
+    "@types/node": "^14.0.1",
+    "jest": "^26.0.1",
+    "ts-jest": "^26.0.0",
+    "typescript": "^3.9.2"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.3.6"
+  }
+}

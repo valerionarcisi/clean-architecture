@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "noImplicitAny": true,
+        "strict": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        // We can't use these for now because TS doesn't support conditional
+        // disabling.
+        // "noUnusedLocals": true,
+        // "noUnusedParameters": true,
+        "sourceMap": true,
+        "outDir": "./dist",
+        "declaration": true
+    }
+}

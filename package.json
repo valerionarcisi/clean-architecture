@@ -1,0 +1,20 @@
+{
+  "name": "clean-architecture",
+  "version": "1.0.0",
+  "description": "small project to working with clean architecture",
+  "scripts": {
+    "format": "npx prettier --write '**/src/**/*.ts?(x)'"
+  },
+  "keywords": [
+    "react",
+    "angular",
+    "clean-architecture",
+    "boilerplate"
+  ],
+  "author": "@valerionarcisi",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  },
+  "dependencies": {}
+}
