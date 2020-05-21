@@ -1,8 +1,8 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit'
+import { createSlice, PayloadAction, Action } from '@reduxjs/toolkit'
+import { ThunkAction} from 'redux-thunk'
 import { MovieEntity } from './../../entities'
 import { MovieRepositoryOmDBImpl } from '../../infrastructure'
 import { MovieServiceImpl } from './../../useCase'
-
 interface GenericState<T> {
   data?: T;
   loading: true | false;
@@ -34,8 +34,9 @@ const movieSlice = createSlice({
   }
 })
 
+export type AppThunk = ThunkAction<void, any, null, Action<string>>
 
-export const fetchMovie = (title: string) => async (dispatch: (arg0: { payload: MovieEntity | Error | undefined; type: string }) => void) => {
+export const fetchMovie = (title: string):AppThunk => async dispatch => {
 
   try {
     dispatch(fetchMovieStart())
