@@ -1,7 +1,7 @@
 import { MovieEntity, MovieRepository } from '../entities'
 
 export interface MovieService {
-  getMovie(title: string): Promise<MovieEntity | Error>
+  getMovie(title: string): Promise<MovieEntity>
 }
 
 export class MovieServiceImpl implements MovieService {

@@ -1,0 +1,10 @@
+<div>
+  my Movie
+  <br><br><br>
+  <div *ngIf="movie">
+    {{movie.title}}<br>
+    {{movie.director}}<br>
+    {{movie.genre}}<br>
+    <img src="{{movie.poster}}">
+  </div>
+</div>
